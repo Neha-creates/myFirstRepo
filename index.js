@@ -11,4 +11,18 @@ for (let i = 0; i <= arr.length; i++){
         console.log("Odd number: ",arr[i]);
     }
 }
-
+// Pattern printing of letter N
+function patternPrinting(n){
+    for(let i = 1; i <= n; i++){
+        let bag = " ";
+        for (let j = 1; j <= n; j++){
+            if(j==1 || i==j || j==n){
+            bag+="* ";
+            }else{
+            bag+="  ";
+            }
+        }
+        console.log(bag);
+    }
+}
+patternPrinting(7)
